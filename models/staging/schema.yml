@@ -4,6 +4,9 @@ models:
   - name: stg_product_list
     columns:
       - name: product_id
+      - tests:
+        - unique
+        - not null
       - name: product_name
       - name: product_type
       - name: price
