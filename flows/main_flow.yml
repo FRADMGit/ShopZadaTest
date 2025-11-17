@@ -7,12 +7,10 @@ tasks:
     tasks:
       - id: run_clone_repository
         type: io.kestra.plugin.core.flow.Subflow
-        flow:
-          namespace: shopzada.flows
-          id: clone_repository
+        namespace: shopzada.flows
+        flowId: clone_repository
 
       - id: run_create_db
         type: io.kestra.plugin.core.flow.Subflow
-        flow:
-          namespace: shopzada.flows
-          id: create_db
+        namespace: shopzada.flows
+        flowId: create_db
