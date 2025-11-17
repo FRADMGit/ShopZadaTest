@@ -2,17 +2,17 @@ id: main_flow
 namespace: shopzada.flows
 
 tasks:
-  id: dbt
-  type: io.kestra.plugin.core.flow.WorkingDirectory
-  tasks:
-    - id: run_clone_repository
-      type: io.kestra.plugin.core.flow.Subflow
-      flow:
-        namespace: shopzada.flows
-        id: clone_repository
-  
-  	- id: run_create_db
-    	type: io.kestra.plugin.core.flow.Subflow
-    	flow:
-        namespace: shopzada.flows
-     	  id: create_db
+  - id: dbt
+    type: io.kestra.plugin.core.flow.WorkingDirectory
+    tasks:
+      - id: run_clone_repository
+        type: io.kestra.plugin.core.flow.Subflow
+        flow:
+          namespace: shopzada.flows
+          id: clone_repository
+
+      - id: run_create_db
+        type: io.kestra.plugin.core.flow.Subflow
+        flow:
+          namespace: shopzada.flows
+          id: create_db
