@@ -6,7 +6,7 @@ models:
       - name: product_id
       - tests:
         - unique
-        - not null
+        - not_null
       - name: product_name
       - name: product_type
       - name: price
