@@ -1,1 +1,1 @@
-SELECT * FROM ref{{ ('product_list') }}
+SELECT * FROM {{ ref('product_list') }}
