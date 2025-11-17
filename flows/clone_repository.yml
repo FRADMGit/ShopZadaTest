@@ -1,0 +1,8 @@
+id: clone_repository
+namespace: shopzada.flows
+
+tasks:
+  - id: clone
+    type: io.kestra.plugin.git.Clone
+    url: https://github.com/FRADMGit/ShopZadaTest
+    branch: main
