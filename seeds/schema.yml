@@ -1,7 +1,0 @@
-version: 2
-
-seeds:
-  - name: clean_user_credit_card
-    columns:
-      - name: credit_card_number
-        data_type: TEXT
