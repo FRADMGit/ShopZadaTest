@@ -6,4 +6,4 @@ WITH unique_campaigns AS (
 )
 SELECT *
 FROM {{ ref('stg_campaign_data') }}
-WHERE campaign_id IN (SELECT campaign_id FROM unique_campaigns);
+WHERE campaign_id IN (SELECT campaign_id FROM unique_campaigns)
