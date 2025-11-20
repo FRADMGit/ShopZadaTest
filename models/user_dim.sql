@@ -28,4 +28,4 @@ WHERE
     AND ud.user_name IS NOT NULL
 GROUP BY 
     ud.user_id, 
-    ud.user_name;
+    ud.user_name
